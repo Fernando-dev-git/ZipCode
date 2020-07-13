@@ -24,7 +24,7 @@ public class CodigoPostalImpl implements CodigoPostal {
 
 	@Override
 	public CodigoPostalVO getCodigoPostal(String zipCode) throws IOException, NotFoundException {
-		File resource = new File(context.getRealPath("WEB-INF/CPMexico.txt"));
+		File resource = new File(context.getRealPath("/WEB-INF/CPMexico.txt"));
 		List<String> multilineas = null;
 		
 		try {
